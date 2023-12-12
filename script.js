@@ -24,9 +24,11 @@ function passGen() {
   )
   if (length < 8) {
     alert('Password length must be at least 8 characters');
+    window.location.reload(true)
   }
   if (length > 128) {
     alert('Password length must be less than 129 characters');
+    window.location.reload(true)
   }
   // while (selectCharType == false) {
   //   let lowerCaseChars = getChoice ("lowercase")
@@ -65,7 +67,8 @@ for (let i = 0; i <= length; i++) {
   let randomNum = Math.floor(Math.random() * numChars.length);
   password += numChars.substring(randomNum, randomNum +1);
  }
- return finalPassword
+  return finalPassword
+  password.appendChild(finalPassword);
 }
 
 // Write password to the #password input
