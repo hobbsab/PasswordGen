@@ -77,13 +77,13 @@ for (let i = 0; i <= length; i++) {
   finalPassword += passwordOptions.substring(randomNum, randomNum +1);
  }
   return finalPassword
-  password.appendChild(finalPassword); //Is this needed?
 }
 
 // Write password to the #password input
 function writePassword() {
   let password = passGen();
   let passwordText = document.querySelector("#password");
+  passwordText.innerHTML = password;
 }
 
 // Add event listener to generate button
