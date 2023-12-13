@@ -37,20 +37,10 @@ function passGen() {
   //   let specialChars = getChoice("special")
   // }
 
-// prompts
 
-// Variable to store boolean regarding the inclusion of special characters
-let useSpecialChars = confirm(
-  'Click OK to confirm including special characters.'
-);
-if true {
-  //save and go to next question
-}
-if false {
-  //NO specialchars. same info and goto next question
-}
+  // PROMPTS
 
-// Variable to store boolean regarding the inclusion of numbers.
+  // Variable to store boolean regarding the inclusion of numbers.
 let useNumChars = confirm(
   'Click OK to confirm including numbers.'
 );
@@ -62,13 +52,32 @@ let useLowerCaseChars = confirm(
 let useUpperCaseChars = confirm(
   'Click OK to confirm including uppercase characters.'
 );
+  //Variable to store boolean regarding the inclusion of special characters
+let useSpecialChars = confirm(
+  'Click OK to confirm including special characters.'
+);
+
+
+if(useNumChars) {
+  passwordOptions+= numChars
+}
+if(useLowerCaseChars) {
+  passwordOptions+= lowerCaseChars
+}
+if(useUpperCaseChars) {
+  passwordOptions+= upperCaseChars
+}
+if(useSpecialChars) {
+  passwordOptions+= specialChars
+}
+
 //useNumChars
 for (let i = 0; i <= length; i++) {
-  let randomNum = Math.floor(Math.random() * numChars.length);
-  password += numChars.substring(randomNum, randomNum +1);
+  let randomNum = Math.floor(Math.random() * passwordOptions.length);
+  finalPassword += passwordOptions.substring(randomNum, randomNum +1);
  }
   return finalPassword
-  password.appendChild(finalPassword);
+  password.appendChild(finalPassword); //Is this needed?
 }
 
 // Write password to the #password input
