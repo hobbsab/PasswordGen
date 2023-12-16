@@ -12,12 +12,7 @@ let specialChars = "a'+,.-/:;<>=?[]_{}`~!@#$%^&*()";
 function passGen() {
   let passwordOptions = '';
   let finalPassword = '';
-  // let passLength = promptLength();
-  // let upperCaseChars = 
-  // let lowerCaseChars = ("lowercase")
-  // let numChars = writePassword("numeric")
-  // let specialChars = getChoice("special")
-  // let selectCharType = false;
+
   //selecting atleast 1 character type
   let length = parseInt(
     prompt('How many characters would you like your password to contain?')
@@ -30,12 +25,6 @@ function passGen() {
     alert('Password length must be less than 129 characters');
     window.location.reload(true)
   }
-  // while (selectCharType == false) {
-  //   let lowerCaseChars = getChoice ("lowercase")
-  //   let upperCaseChars = getChoice ("uppercase")
-  //   let numChars = getChoice("numeric")
-  //   let specialChars = getChoice("special")
-  // }
 
 
   // PROMPTS
