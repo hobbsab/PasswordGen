@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background: rgb(0, 0, 0);
 }
 
 .wrapper {
@@ -23,19 +23,38 @@ body {
   padding-right: 20px;
 }
 
+.handjet {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+}
+
+.changa {
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: #2bff00;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background: rgb(82,74,88);
+  background: linear-gradient(0deg, rgba(82,74,88,1) 0%, rgba(37,32,41,1) 100%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: #2bff00;
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
@@ -74,7 +93,8 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background: rgb(9,158,121);
+  background: linear-gradient(0deg, rgba(9,158,121,1) 0%, rgba(45,253,62,1) 100%);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -134,4 +154,22 @@ button[disabled] {
   .btn {
     font-size: 0.8rem;
   }
+}
+
+footer {
+  margin: auto;
+  color: #c1c1c1;
+  text-align: center;
+  padding: 20px;
+}
+
+#footerimg {
+  width: 40px;
+  height: auto;
+  opacity: 0.7;
+}
+
+#footerimg:hover
+{
+    opacity: 1.0;
 }

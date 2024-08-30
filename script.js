@@ -15,7 +15,7 @@ function passGen() {
 
   //selecting atleast 1 character type
   let length = parseInt(
-    prompt('How many characters would you like your password to contain?')
+    prompt('How many characters would you like your password to contain? 8 or more characters is required.')
   )
   if (length < 8) {
     alert('Password length must be at least 8 characters');
